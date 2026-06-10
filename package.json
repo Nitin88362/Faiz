@@ -1,0 +1,16 @@
+{
+  "name": "language-translator",
+  "version": "1.0.0",
+  "description": "Full MERN stack language translator app",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "build": "cd client && npm install && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

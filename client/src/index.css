@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for dark theme */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.neon-button {
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 30px rgba(102, 126, 234, 0.8);
+}
