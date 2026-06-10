@@ -62,7 +62,7 @@ io.on('connection', (socket) => {
       const { message, sourceLanguage, targetLanguage, roomId } = data;
 
       // Translate message
-      const { translate } = require('google-translate-api-x');
+      const { translate } = require('./utils/translator');
       const result = await translate(message, { from: sourceLanguage, to: targetLanguage });
 
       // Save to history
